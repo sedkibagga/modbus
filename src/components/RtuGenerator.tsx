@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { calculateCRC16, formatHexFrame } from '../utils/checksum';
+import { calculateCRC16 } from '../utils/checksum';
 import { validateHexInput, validateSlaveId } from '../utils/validation';
 import FrameDisplay from './FrameDisplay';
 import { Buffer } from 'buffer';

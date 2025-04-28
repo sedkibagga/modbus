@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { formatHexFrame } from '../utils/checksum';
 import { validateHexInput } from '../utils/validation';
 import FrameDisplay from './FrameDisplay';
 

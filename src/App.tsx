@@ -1,6 +1,5 @@
 import './App.css'
 import ModbusTabs from './components/ModbusTabs'
-import Navbar from './components/Navbar'
 
 function App() {
  
