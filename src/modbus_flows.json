@@ -1,0 +1,61 @@
+[
+    {
+      "id": "modbus-server",
+      "type": "modbus-server",
+      "name": "Modbus Server",
+      "logEnabled": false,
+      "hostname": "127.0.0.1",
+      "serverPort": "502",
+      "responseDelay": 100,
+      "unitId": 1,
+      "tcpTimeout": 3000
+    },
+    {
+      "id": "modbus-client",
+      "type": "modbus-client",
+      "name": "Modbus Client",
+      "clienttype": "tcp",
+      "bufferCommands": true,
+      "stateLogEnabled": false,
+      "tcpHost": "127.0.0.1",
+      "tcpPort": "502",
+      "unit_id": 1
+    },
+    {
+      "id": "read-holding",
+      "type": "modbus-read",
+      "name": "Read Holding Registers",
+      "topic": "",
+      "showStatusActivities": false,
+      "logIOActivities": false,
+      "unitid": 1,
+      "dataType": "HoldingRegister",
+      "adr": "0",
+      "quantity": "10",
+      "rate": "2",
+      "rateUnit": "s",
+      "delayOnStart": false,
+      "startDelayTime": "",
+      "server": "modbus-client",
+      "useIOFile": false,
+      "ioFile": "",
+      "useIOForPayload": false,
+      "emptyMsgOnFail": false
+    },
+    {
+      "id": "debug-output",
+      "type": "debug",
+      "name": "Debug Output",
+      "active": true,
+      "tosidebar": true,
+      "console": false,
+      "tostatus": false,
+      "complete": "payload",
+      "targetType": "msg",
+      "statusVal": "",
+      "statusType": "auto",
+      "x": 550,
+      "y": 240,
+      "wires": []
+    }
+  ]
