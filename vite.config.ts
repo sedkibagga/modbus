@@ -8,7 +8,12 @@ export default defineConfig({
     tailwindcss(),
     react(),
     nodePolyfills({
-      include: ['buffer'], // Polyfill the buffer module
+      include: ['buffer'], 
     }),
   ],
+  base: './', 
+  build: {
+    outDir: 'dist',
+    emptyOutDir: true,
+  }
 })
